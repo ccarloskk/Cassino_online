@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
-
-
-
 :root {
     --corprincipal: #353273;
     --corsegundaria: #BFB6AE;
@@ -14,6 +11,12 @@
     --fonte-principal: 'Lato';
 
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 header{
     text-align: center;
     margin: -15px;
@@ -27,10 +30,11 @@ body{
     background-attachment: fixed ;
     color: white;
     overflow-x: hidden;
+    text-align: center;
 }
 main{
     background-color: #F2F2F2;
-    color: white;
+    color: black;
     border-radius: 10px;
     min-width: 320px;
     max-width: 550px;
@@ -43,36 +47,10 @@ main{
     justify-content: center;
     align-items: center;
 }
-
-.botao {
-    display: inline-block;
-    display: block;
-    padding: 10px 20px;
-    margin: 25px;
-    background-color: #353273;
-    color: #F2F2F2;
-    text-decoration: none;
-    transition: box-shadow ease;
-    border-radius: 5px;
-    font-size: 1em;
-    font-family: var(--botao);
-    cursor: pointer;
-    height: 50px;
-    width: 200px;
-
-}
-#nome{
-    color: black;
-    font-family: var(--fonte-principal);
-    font-size: 1.5em;
-    margin: 0px;
-    margin-top: -20px;
-    text-align: center;
-    margin-left: -13px;
-
-}
-.botao:hover {
-    box-shadow: 3px 3px 3px black;
+input{
+    height: 25px;
+    width: 250px;
+    margin: 10px;
 }
 footer{
     font-family: var(--fonte-principal);
@@ -84,3 +62,4 @@ footer{
     margin: 5px;
 
 }
+
